@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Hangman game">
+  <meta name="keywords" content="Creating Hangman game using HTML, CSS and Javascript">
+  <meta name="author" content="Muhammad Galhoum">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/confetti.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Hangman game</title>
+</head>
+<body>
+  <div class="confetti" style="display:none">
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+  </div>
+  <h1>Hangman Game</h1>
+  <div class="container">
+    <div class="game-info">
+      <div class="category">
+        Category name: <span></span>
+      </div>
+      <div class="tries">
+        Number of Available tries: <span>8</span>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="hangman-draw">
+        <div class="the-draw">
+          <div class="the-stand"></div>
+          <div class="the-hang"></div>
+          <div class="the-rope"></div>
+          <div class="the-man">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="hands"></div>
+            <div class="legs"></div>
+          </div>
+        </div>
+      </div>
+      <div class="letters"></div>
+    </div>
+    <hr>
+    <div class="letters-guess"></div>
+  </div>
+  <audio id="success" src="./audio/success.mp3" preload="auto"></audio>
+  <audio id="wrong" src="./audio/wrong.mp3" preload="auto"></audio>
+  <audio id="congrats" src="./audio/congrats.mp3" preload="auto"></audio>
+  <audio id="gameover" src="./audio//gameOver.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

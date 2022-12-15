@@ -1,0 +1,18 @@
+{
+  "programming": ["Python", "JavaScript", "GO", "PHP", "Pascal", "Scala", "R", "MySQL", "Fortran"],
+  "movies": ["Prestige", "Inception", "Parasite", "Interstellar", "Whiplash", "Memento", "Coco", "Up"],
+  "people": ["Albert Einstein", "Hitchcock", "Alexander", "Cleopatra", "Mahatma Ghandi"],
+  "countries": ["UAE", "Palestine", "Syria", "Egypt", "Yemn", "Bahrian", "Qater"],
+  "fruits": ["Apple", "Strawberries", "Pineapple", "Grape", "Mango", "Banana", "Orange",
+  "Kiwi", "Lemon", "Watermelon", "Cherry", "Avocados", "Papaya", "Pomegranate", "Dragonrfruit"],
+  "vegetables": ["Cucmber", "Potato", "Cabbage", "Tomato", "Pea", "Corn", "Carrot", "Broccoli",
+  "Radish", "Sweer Potato", "Green onion", "Red onion", "Bell pepper", "Eggplant", "Celery"],
+  "animals": ["Lion", "Tiger", "Elephant", "Giraffe", "Bear", "Zebra", "Panda", "Gorilla",
+  "Monkey", "Kangroo", "Wolf", "Horse", "Yak", "Fox", "Deer"],
+  "birds": ["Pigeon", "Peacock", "Parrot", "Sparrow", "Woodpecker", "Owl", "Bat", "Dove", "Duck",
+  "Penguin", "Rooster", "Rooster", "Hen", "Eagle", "Chick"],
+  "drinks": ["coffee", "espresso", "hot chocolate", "juice", "lemonade", "milk", "soda", "tea",
+  "water", "Milkshake.", "Green tea", "Cocktails", "Apple juice", "Coconut water", "Tomato juice"],
+  "clothes": ["jacket", "sweater", "coat", "jeans", "socks", "shorts", "tracksuit", "vest", "pajamas",
+  "blouse", "boots", "heels", "dress", "swimsuit", "skirt"]
+}
