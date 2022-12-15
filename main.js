@@ -14,7 +14,7 @@ lettersArr.forEach((letter) => {
 
 async function fetchData() {
   try {
-    let myData = await fetch('../categories.json');
+    let myData = await fetch('./categories.json');
     let words = await myData.json();
 
     // Getting all Object keys (all Categories)
