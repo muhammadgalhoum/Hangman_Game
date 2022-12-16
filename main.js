@@ -37,11 +37,15 @@ async function fetchData() {
     // Converting the chosen word to an Array contains Letters and Spaces if exisit
     let chosenWordLetters = Array.from(randomValueName.toLowerCase());
 
+    // Detecting if there is exists a space in the word or not
+    let space = false;
+
     // Creating Spans equal to the chosen word length
     chosenWordLetters.forEach((letter) => {
       const span = document.createElement('span');
-      // If the letter is Space, We will add a specific class to this span
+      // If the letter is a Space, We will add a specific class to this span
       if (letter === ' ') {
+        space = true;
         span.className = 'space'
       }
       letterGuessContainer.appendChild(span);
@@ -112,7 +116,7 @@ async function fetchData() {
                 emptySpans--;
               }
             });
-            if (emptySpans === 0) {
+            if (emptySpans === 0 || (emptySpans === 1 && space === true)) {
               lettersContainer.classList.add('finshed');
               let level = wrongAttempts < 4 ? 'Excellent' : (wrongAttempts >= 4 && wrongAttempts < 7) ?
                 'Intermediate' : 'Accept';
