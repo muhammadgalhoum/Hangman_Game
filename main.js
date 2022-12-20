@@ -120,11 +120,12 @@ async function fetchData() {
               lettersContainer.classList.add('finshed');
               let level = wrongAttempts < 4 ? 'Excellent' : (wrongAttempts >= 4 && wrongAttempts < 7) ?
                 'Intermediate' : 'Accept';
+              let mistake = wrongAttempts <= 1 ? 'Mistake' : 'Mistakes';
               document.getElementById('congrats').play();
               Swal.fire({
                 icon: 'success',
                 title: 'Well Done!',
-                html: `You made <strong>${wrongAttempts}</strong> Mistakes,\
+                html: `You made <strong>${wrongAttempts}</strong> ${mistake},\
                 so your level of <strong>${randomKeyName} Info</strong> is <strong>${level}</strong> <br>\
                 <b>Do you wanna play again?</b>`,
                 showCancelButton: true,
